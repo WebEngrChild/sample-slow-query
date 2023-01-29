@@ -1,0 +1,20 @@
+version: "3" # composeファイルのバージョン
+
+services:
+  mysql:
+    # コンテナ名を明示的に指定
+    container_name: mysql
+    # Dockerfileからビルドすることを示す
+    build: ./.docker/
+    # コンテナにマウント
+    volumes:
+      # 初期化クエリ
+      - ./.docker/init:/docker-entrypoint-initdb.d
+      # 設定ファイル
+      - ./.docker/my.cnf:/etc/mysql/conf.d/my.cnf
+      # ログファイル
+      - ./.docker/log:/var/log/mysql
+      # データ永続化場所
+#      - ./.docker/data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_PASS}
