@@ -8,7 +8,7 @@ build:
 up:
 	docker-compose up -d
 mysql:
-	docker-compose exec mysql mysql -uroot -ppass
+	docker-compose exec sample-mysql mysql -uroot -ppass
 down:
 	docker-compose down
 stop:
