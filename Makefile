@@ -1,3 +1,5 @@
+copy_env:
+	sh copy_env.sh
 init:
 	@make build
 	@make up

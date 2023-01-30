@@ -1,9 +1,9 @@
 version: "3" # composeファイルのバージョン
 
 services:
-  mysql:
+  sample-mysql:
     # コンテナ名を明示的に指定
-    container_name: mysql
+    container_name: sample-mysql
     # Dockerfileからビルドすることを示す
     build: ./.docker/
     # コンテナにマウント
