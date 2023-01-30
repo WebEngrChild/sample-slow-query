@@ -27,6 +27,12 @@ INSERT INTO item (id) SELECT 0 FROM item;
 INSERT INTO item (id) SELECT 0 FROM item;
 INSERT INTO item (id) SELECT 0 FROM item;
 INSERT INTO item (id) SELECT 0 FROM item;
+INSERT INTO item (id) SELECT 0 FROM item;
+INSERT INTO item (id) SELECT 0 FROM item;
+INSERT INTO item (id) SELECT 0 FROM item;
+INSERT INTO item (id) SELECT 0 FROM item;
+INSERT INTO item (id) SELECT 0 FROM item;
+INSERT INTO item (id) SELECT 0 FROM item;
 
 -- 空データを型に合わせてランダムな値に更新
 UPDATE item SET

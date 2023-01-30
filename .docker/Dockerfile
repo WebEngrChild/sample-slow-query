@@ -1,5 +1,5 @@
 #使うDockerイメージ
-FROM mysql:8.0
+FROM mysql:latest
 
 #ポートを開ける
 EXPOSE 3306
