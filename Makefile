@@ -7,6 +7,8 @@ build:
 	docker-compose build --no-cache
 up:
 	docker-compose up -d
+exec:
+	docker-compose exec sample-mysql bash
 mysql:
 	docker-compose exec sample-mysql mysql -uroot -ppass
 down:
